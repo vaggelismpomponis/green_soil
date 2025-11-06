@@ -1,14 +1,14 @@
 import { Card } from "./card";
 
 const items = [
-  { title: "ανάλυση εδάφους & δεδομένων", description: "δειγματοληψία, εργαστηριακή ανάλυση, ερμηνεία μετρήσεων." },
-  { title: "σχέδια λίπανσης", description: "εξατομικευμένα πλάνα, μείωση κόστους, αύξηση παραγωγής." },
-  { title: "συμβουλευτική καλλιεργειών", description: "παρακολούθηση, βέλτιστες πρακτικές, εκπαίδευση." },
+  { title: "Ανάλυση εδάφους & δεδομένων", description: "Δειγματοληψία, εργαστηριακή ανάλυση, ερμηνεία μετρήσεων." },
+  { title: "Σχέδια λίπανσης", description: "Εξατομικευμένα πλάνα, μείωση κόστους, αύξηση παραγωγής." },
+  { title: "Συμβουλευτική καλλιεργειών", description: "Παρακολούθηση, βέλτιστες πρακτικές, εκπαίδευση." },
 ];
 
 export function Features() {
   return (
-    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((f) => (
         <Card key={f.title} title={f.title} description={f.description} />
       ))}

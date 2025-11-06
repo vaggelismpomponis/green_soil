@@ -10,11 +10,16 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <Container>
-      <h1 className="text-2xl font-semibold mb-6">έργα / πελάτες</h1>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <Container className="py-12">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900">Έργα / Πελάτες</h1>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          Δείτε μερικά από τα έργα που έχουμε υλοποιήσει με επιτυχία.
+        </p>
+      </div>
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {[1, 2, 3].map((i) => (
-          <Card key={i} title={`έργο ${i}`} description={`σύντομη περιγραφή έργου ${i}.`} />
+          <Card key={i} title={`Έργο ${i}`} description={`Σύντομη περιγραφή έργου ${i} με λεπτομέρειες για την υλοποίηση και τα αποτελέσματα.`} />
         ))}
       </div>
     </Container>
