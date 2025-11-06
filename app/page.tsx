@@ -6,7 +6,7 @@ import { Features } from "@/components/features";
 export const metadata: Metadata = {
   title: "Βιώσιμες λύσεις για το έδαφος και την καλλιέργεια",
   description:
-    "Η Green Soil Ι Κ Ε. παρέχει αξιόπιστες υπηρεσίες αγροτεχνολογίας και συμβουλευτικής για παραγωγούς και επιχειρήσεις.",
+    "Η Green Soil Ι Κ Ε παρέχει αξιόπιστες υπηρεσίες αγροτεχνολογίας και συμβουλευτικής για παραγωγούς και επιχειρήσεις στην Ελλάδα.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Green Soil I K E",
