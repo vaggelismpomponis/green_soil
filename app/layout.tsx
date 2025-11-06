@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="el" className="h-full">
       <body className="min-h-screen flex flex-col bg-white text-gray-900">
         <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-white focus:text-primary-dark focus:px-3 focus:py-2 focus:rounded">
-          μετάβαση στο περιεχόμενο
+          Μετάβαση στο περιεχόμενο
         </a>
         <Header />
         <CookieConsent />
