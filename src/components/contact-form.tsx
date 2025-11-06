@@ -9,7 +9,6 @@ export function ContactForm() {
     setStatus("loading");
     setError(null);
     const payload = {
-      fullName: String(formData.get("fullName") || ""),
       email: String(formData.get("email") || ""),
       phone: String(formData.get("phone") || ""),
       message: String(formData.get("message") || ""),
@@ -29,10 +28,6 @@ export function ContactForm() {
 
   return (
     <form action={onSubmit} className="grid gap-6 max-w-xl" aria-label="φόρμα επικοινωνίας">
-      <div>
-        <label htmlFor="fullName" className="block text-sm mb-2 font-semibold text-gray-900">Ονοματεπώνυμο</label>
-        <input id="fullName" name="fullName" required className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-dark focus:border-primary-dark transition-all duration-200" aria-required="true" />
-      </div>
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
           <label htmlFor="email" className="block text-sm mb-2 font-semibold text-gray-900">Email</label>

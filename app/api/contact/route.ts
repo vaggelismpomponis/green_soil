@@ -3,7 +3,6 @@ import type { NextRequest } from "next/server";
 import nodemailer from "nodemailer";
 
 const schema = z.object({
-  fullName: z.string().min(2),
   email: z.string().email(),
   phone: z.string().optional(),
   message: z.string().min(10),
@@ -32,7 +31,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from,
       to,
-      subject: `Νέο μήνυμα από ${data.fullName}`,
+      subject: `Νέο μήνυμα από ${data.email}`,
       text: `${data.message}\n\nemail: ${data.email}${data.phone ? `, τηλ: ${data.phone}` : ""}`,
     });
 

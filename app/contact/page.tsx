@@ -24,9 +24,15 @@ export default function ContactPage() {
         <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
           <iframe
             title="χάρτης"
-            src="https://maps.google.com/maps?q=athens&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.3088455185!2d23.7275!3d37.9838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDU5JzAxLjciTiAyM8KwNDMnMzkuMCJF!5e0!3m2!1sel!2sgr!4v1234567890123!5m2!1sel!2sgr"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen={true}
             loading="lazy"
-            className="w-full h-80"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full"
+            aria-label="Χάρτης τοποθεσίας"
           />
         </div>
       </div>

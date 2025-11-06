@@ -9,12 +9,12 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
       <Container className="flex h-14 items-center justify-between">
-        <Link href="/" className="font-semibold text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">green soil</Link>
+        <Link href="/" className="font-semibold text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">Green Soil</Link>
         <nav className="hidden md:flex items-center gap-4 text-sm" aria-label="κύρια πλοήγηση">
-          <Link href="/about" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">ποιοι είμαστε</Link>
-          <Link href="/services" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">υπηρεσίες</Link>
-          <Link href="/projects" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">έργα</Link>
-          <Link href="/contact" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">επικοινωνία</Link>
+          <Link href="/about" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">Ποιοι είμαστε</Link>
+          <Link href="/services" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">Υπηρεσίες</Link>
+          <Link href="/projects" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">Έργα</Link>
+          <Link href="/contact" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">Επικοινωνία</Link>
         </nav>
         <button
           type="button"
@@ -34,10 +34,10 @@ export function Header() {
         {mobileMenuOpen && (
           <nav className="absolute top-14 left-0 right-0 bg-white border-b md:hidden" aria-label="κύρια πλοήγηση">
             <Container className="py-4 flex flex-col gap-4">
-              <Link href="/about" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>ποιοι είμαστε</Link>
-              <Link href="/services" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>υπηρεσίες</Link>
-              <Link href="/projects" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>έργα</Link>
-              <Link href="/contact" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>επικοινωνία</Link>
+              <Link href="/about" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>Ποιοι είμαστε</Link>
+              <Link href="/services" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>Υπηρεσίες</Link>
+              <Link href="/projects" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>Έργα</Link>
+              <Link href="/contact" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>Επικοινωνία</Link>
             </Container>
           </nav>
         )}
