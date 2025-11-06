@@ -21,7 +21,7 @@ export default function ServicesPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900">Υπηρεσίες</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Παρέχουμε ολοκληρωμένες λύσεις για την ανάπτυξη βιώσιμων και αποδοτικών καλλιεργειών.
+            Παρέχουμε ολοκληρωμένες λύσεις για την ανάπτυξη βιώσιμων και αποδοτικών καλλιεργειών
           </p>
         </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

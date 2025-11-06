@@ -15,7 +15,7 @@ export default function ProjectsPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900">Έργα / Πελάτες</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Δείτε μερικά από τα έργα που έχουμε υλοποιήσει με επιτυχία.
+            Δείτε μερικά από τα έργα που έχουμε υλοποιήσει με επιτυχία
           </p>
         </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

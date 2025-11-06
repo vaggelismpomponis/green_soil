@@ -16,7 +16,7 @@ export default function ContactPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900">Επικοινωνία</h1>
           <p className="text-xl text-gray-600">
-            Συμπληρώστε τη φόρμα και η ομάδα μας θα επικοινωνήσει μαζί σας το συντομότερο.
+            Συμπληρώστε τη φόρμα και η ομάδα μας θα επικοινωνήσει μαζί σας το συντομότερο
           </p>
         </div>
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
