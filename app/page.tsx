@@ -4,14 +4,14 @@ import { Hero } from "@/components/hero";
 import { Features } from "@/components/features";
 
 export const metadata: Metadata = {
-  title: "βιώσιμες λύσεις για το έδαφος και την καλλιέργεια",
+  title: "Βιώσιμες λύσεις για το έδαφος και την καλλιέργεια",
   description:
-    "η green soil ι.κ.ε. παρέχει αξιόπιστες υπηρεσίες αγροτεχνολογίας και συμβουλευτικής για παραγωγούς και επιχειρήσεις.",
+    "Η Green Soil Ι Κ Ε. παρέχει αξιόπιστες υπηρεσίες αγροτεχνολογίας και συμβουλευτικής για παραγωγούς και επιχειρήσεις.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "green soil ι.κ.ε.",
+    title: "Green Soil I K E",
     description:
-      "η green soil ι.κ.ε. παρέχει αξιόπιστες υπηρεσίες αγροτεχνολογίας και συμβουλευτικής για παραγωγούς και επιχειρήσεις.",
+      "Η Green Soil I K E παρέχει αξιόπιστες υπηρεσίες αγροτεχνολογίας και συμβουλευτικής για παραγωγούς και επιχειρήσεις.",
     type: "website",
     url: "/",
   },
@@ -21,7 +21,7 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-beige">
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">Οι υπηρεσίες μας</h2>

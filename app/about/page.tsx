@@ -2,16 +2,17 @@ import type { Metadata } from "next";
 import { Container } from "@/components/container";
 
 export const metadata: Metadata = {
-  title: "ποιοι είμαστε",
-  description: "συνδυάζουμε επιστημονική γνώση και πρακτική εμπειρία",
+  title: "Ποιοι είμαστε",
+  description: "Συνδυάζουμε επιστημονική γνώση και πρακτική εμπειρία",
   alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
   return (
-    <Container className="prose prose-lg max-w-4xl py-12">
-      <h1 className="text-4xl font-bold mb-8 text-gray-900">Ποιοι είμαστε</h1>
-      <div className="space-y-6 text-gray-700 leading-relaxed">
+    <div className="bg-beige-light">
+      <Container className="prose prose-lg max-w-4xl py-12">
+        <h1 className="text-4xl font-bold mb-8 text-gray-900">Ποιοι είμαστε</h1>
+        <div className="space-y-6 text-gray-700 leading-relaxed">
         <p className="text-lg">
           Στη Green Soil Ι.Κ.Ε. συνδυάζουμε επιστημονική γνώση και πρακτική εμπειρία για να υποστηρίζουμε βιώσιμες, αποδοτικές καλλιέργειες.
         </p>
@@ -23,6 +24,7 @@ export default function AboutPage() {
         </p>
       </div>
     </Container>
+    </div>
   );
 }
 

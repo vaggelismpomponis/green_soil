@@ -3,8 +3,8 @@ import { Container } from "@/components/container";
 import { Card } from "@/components/card";
 
 export const metadata: Metadata = {
-  title: "υπηρεσίες",
-  description: "ανάλυση εδάφους, σχέδια λίπανσης, συμβουλευτική καλλιεργειών",
+  title: "Υπηρεσίες",
+  description: "Ανάλυση εδάφους, σχέδια λίπανσης, συμβουλευτική καλλιεργειών",
   alternates: { canonical: "/services" },
 };
 
@@ -16,19 +16,21 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <Container className="py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900">Υπηρεσίες</h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Παρέχουμε ολοκληρωμένες λύσεις για την ανάπτυξη βιώσιμων και αποδοτικών καλλιεργειών.
-        </p>
-      </div>
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {services.map((s) => (
-          <Card key={s.title} title={s.title} description={s.description} cta={{ href: "/contact", label: "Ζητήστε προσφορά" }} />
-        ))}
-      </div>
-    </Container>
+    <div className="bg-white">
+      <Container className="py-12">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900">Υπηρεσίες</h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Παρέχουμε ολοκληρωμένες λύσεις για την ανάπτυξη βιώσιμων και αποδοτικών καλλιεργειών.
+          </p>
+        </div>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((s) => (
+            <Card key={s.title} title={s.title} description={s.description} cta={{ href: "/contact", label: "Ζητήστε προσφορά" }} />
+          ))}
+        </div>
+      </Container>
+    </div>
   );
 }
 

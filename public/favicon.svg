@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .bg-color { fill: #2f855a; }
+    .accent-color { fill: #38a169; }
+    @media (prefers-color-scheme: dark) {
+      .bg-color { fill: #38a169; }
+      .accent-color { fill: #48bb78; }
+    }
+  </style>
+  <rect width="32" height="32" rx="6" class="bg-color"/>
+  <path d="M16 8c-3.3 0-6 2.7-6 6 0 2.2 1.2 4.1 3 5.2V26h6v-6.8c1.8-1.1 3-3 3-5.2 0-3.3-2.7-6-6-6zm0 2c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4z" fill="#ffffff" opacity="0.95"/>
+  <path d="M14 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z" class="accent-color"/>
+  <circle cx="16" cy="12" r="1" fill="#ffffff"/>
+</svg>
+

@@ -19,9 +19,10 @@ const nextConfig = {
             "default-src 'self'",
             "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
             "style-src 'self' 'unsafe-inline'",
-            "img-src 'self' data: blob:",
+            "img-src 'self' data: blob: https://*.googleapis.com https://*.gstatic.com",
             "font-src 'self' data:",
             "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com",
+            "frame-src 'self' https://www.google.com https://*.googleapis.com",
             "frame-ancestors 'none'",
             "base-uri 'self'"
           ].join("; ")

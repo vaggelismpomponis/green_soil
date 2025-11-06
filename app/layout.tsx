@@ -6,13 +6,21 @@ import { CookieConsent } from "@/components/cookie-consent";
 
 export const metadata: Metadata = {
   title: {
-    default: "green soil ι.κ.ε.",
-    template: "%s | green soil ι.κ.ε.",
+    default: "Green Soil I K E",
+    template: "%s | Green Soil I K E",
   },
-  description: "βιώσιμες λύσεις για το έδαφος και την καλλιέργεια",
+  description: "Βιώσιμες λύσεις για το έδαφος και την καλλιέργεια",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
-  applicationName: "Green Soil",
   alternates: { canonical: "/" },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

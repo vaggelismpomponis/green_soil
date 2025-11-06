@@ -12,6 +12,11 @@ export default {
           dark: "#276749",
           light: "#38a169",
         },
+        beige: {
+          DEFAULT: "#f5f1eb",
+          light: "#faf8f5",
+          dark: "#e8e0d6",
+        },
       },
     },
   },
