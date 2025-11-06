@@ -1,17 +1,46 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 import { Container } from "./container";
 
 export function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
       <Container className="flex h-14 items-center justify-between">
-        <Link href="/" className="font-semibold text-primary-dark">green soil</Link>
-        <nav className="flex items-center gap-4 text-sm">
-          <Link href="/about" className="hover:text-primary-dark">ποιοι είμαστε</Link>
-          <Link href="/services" className="hover:text-primary-dark">υπηρεσίες</Link>
-          <Link href="/projects" className="hover:text-primary-dark">έργα</Link>
-          <Link href="/contact" className="hover:text-primary-dark">επικοινωνία</Link>
+        <Link href="/" className="font-semibold text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">green soil</Link>
+        <nav className="hidden md:flex items-center gap-4 text-sm" aria-label="κύρια πλοήγηση">
+          <Link href="/about" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">ποιοι είμαστε</Link>
+          <Link href="/services" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">υπηρεσίες</Link>
+          <Link href="/projects" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">έργα</Link>
+          <Link href="/contact" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded">επικοινωνία</Link>
         </nav>
+        <button
+          type="button"
+          className="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-primary-dark rounded"
+          aria-label="άνοιγμα μενού"
+          aria-expanded={mobileMenuOpen}
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            {mobileMenuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+        {mobileMenuOpen && (
+          <nav className="absolute top-14 left-0 right-0 bg-white border-b md:hidden" aria-label="κύρια πλοήγηση">
+            <Container className="py-4 flex flex-col gap-4">
+              <Link href="/about" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>ποιοι είμαστε</Link>
+              <Link href="/services" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>υπηρεσίες</Link>
+              <Link href="/projects" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>έργα</Link>
+              <Link href="/contact" className="hover:text-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark rounded" onClick={() => setMobileMenuOpen(false)}>επικοινωνία</Link>
+            </Container>
+          </nav>
+        )}
       </Container>
     </header>
   );

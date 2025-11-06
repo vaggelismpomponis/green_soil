@@ -28,9 +28,9 @@ export default function Page() {
       </section>
       <section className="py-12 bg-primary/5">
         <Container>
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             <h2 className="text-xl font-semibold">θέλετε να συζητήσουμε το έργο σας;</h2>
-            <a href="/contact" className="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-white hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark">
+            <a href="/contact" className="inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-white hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-offset-2">
               επικοινωνήστε μαζί μας
             </a>
           </div>
