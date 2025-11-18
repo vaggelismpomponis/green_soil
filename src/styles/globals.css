@@ -58,3 +58,13 @@
   outline: none;
   border: none;
 }
+
+.a:active {
+  outline: none;
+  border: none;
+}
+
+.a:focus {
+  outline: none;
+  border: none;
+}

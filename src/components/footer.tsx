@@ -25,10 +25,11 @@ export function Footer() {
               <li><strong className="text-white">Επωνυμία:</strong> GREEN SOIL Ι Κ Ε</li>
               <li>
                 <strong className="text-white">📍 Έδρα:</strong>{" "}
-                <a href="https://www.google.com/maps?q=Μπουμπουλίνας+107,+Φυλή,+Αττική,+13341" target="_blank" rel="noopener noreferrer" className="text-primary-light hover:text-primary transition-colors">Μπουμπουλίνας 107, Φυλή, Αττική, Τ.Κ.: 13341</a>
+                <a href="https://www.google.com/maps?q=ΑΓΙΑΤΡΙΑΔΑ+0,+Μαραθώνας,+Αττική,+19007" target="_blank" rel="noopener noreferrer" className="text-primary-light hover:text-primary transition-colors">ΑΓΙΑ ΤΡΙΑΔΑ 0, ΜΑΡΑΘΩΝΑΣ Τ.Κ.: 19007</a>
               </li>
               <li><strong className="text-white">Email:</strong> <a href="mailto:info@greensoil.gr" className="text-primary-light hover:text-primary transition-colors">info@greensoil.gr</a></li>
-              <li><strong className="text-white">Τηλέφωνο:</strong> <a href="tel:2110011776" className="text-primary-light hover:text-primary transition-colors">211 0011 776</a></li>
+              <li><strong className="text-white">Σταθερό:</strong> <a href="tel:2110011776" className="text-primary-light hover:text-primary transition-colors">211 0011 776</a></li>
+              <li><strong className="text-white">Κινητό:</strong> <a href="tel:6982438719" className="text-primary-light hover:text-primary transition-colors">698 243 8719</a></li>
               <li><strong className="text-white">Α.Φ.Μ.:</strong> 802454370</li>
               <li><strong className="text-white">Αρ. Γ.Ε.ΜΗ.:</strong> 176654101000</li>
               <li><strong className="text-white">ΑΡ. ΜΗΤΡΩΟΥ ΕΠΙΜΕΛΗΤΗΡΙΟΥ:</strong> 309252</li>
@@ -45,7 +46,7 @@ export function Footer() {
           </div>
         </div>
       </Container>
-      <div className="border-t border-gray-700 py-6 text-center text-sm text-gray-300">© {year} – Green Soil Ι Κ Ε | Developed by <a href="https://www.linkedin.com/in/vaggelis-bomponis/" target="_blank" rel="noopener noreferrer" className="text-primary-light hover:text-primary transition-colors">Vaggelis Bomponis</a></div>
+      <div className="border-t border-gray-700 py-6 text-center text-sm text-gray-300">© {year} – Green Soil ΙΚΕ | Developed by <a href="https://www.linkedin.com/in/vaggelis-bomponis/" target="_blank" rel="noopener noreferrer" className="text-primary-light hover:text-primary transition-colors">Vaggelis Bomponis</a></div>
     </footer>
   );
 }
