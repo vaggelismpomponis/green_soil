@@ -8,7 +8,7 @@ export function Footer() {
       <Container className="py-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-sm max-w-6xl mx-auto text-center md:text-left">
           <div>
-            <div className="font-bold text-lg mb-3 text-white">Green Soil Ι Κ Ε</div>
+            <div className="font-bold text-lg mb-3 text-white">Green Soil ΙΚΕ</div>
             <p className="text-gray-300 leading-relaxed">Βιώσιμες λύσεις για το έδαφος και την καλλιέργεια</p>
           </div>
           <div>
@@ -22,7 +22,7 @@ export function Footer() {
           <div>
             <div className="font-semibold mb-3 text-white">Εταιρικά Στοιχεία</div>
             <ul className="text-gray-300 space-y-2 leading-relaxed">
-              <li><strong className="text-white">Επωνυμία:</strong> GREEN SOIL Ι Κ Ε</li>
+              <li><strong className="text-white">Επωνυμία:</strong> GREEN SOIL ΙΚΕ</li>
               <li>
                 <strong className="text-white">📍 Έδρα:</strong>{" "}
                 <a href="https://www.google.com/maps?q=ΑΓΙΑΤΡΙΑΔΑ+0,+Μαραθώνας,+Αττική,+19007" target="_blank" rel="noopener noreferrer" className="text-primary-light hover:text-primary transition-colors">ΑΓΙΑ ΤΡΙΑΔΑ 0, ΜΑΡΑΘΩΝΑΣ Τ.Κ.: 19007</a>
